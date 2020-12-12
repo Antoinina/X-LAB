@@ -52,9 +52,10 @@ main{
   padding: 2em 0;
 }
 
-.active{
+.nav-link.active{
   background-color: white!important;
-  border: 2px solid #00172B;
+  border-bottom: 2px solid #00172B;
+  border-radius: 0;
 }
 
 .fixed-top.scrolled {
@@ -62,6 +63,24 @@ main{
   transition: background-color 200ms linear;
 }
 
+.fixed-top.scrolled a{
+  color: white!important;
+  background-color: #00172B !important;
+  
+}
+
+.fixed-top.scrolled a.active{
+  border-bottom: 2px solid white!important;
+}
+
 strong{
   font-size:18px;
+}
+
+.carousel-item.active{
+border:none;
+}
+
+#nav-footer a:hover{
+  color: white!important;
 }
